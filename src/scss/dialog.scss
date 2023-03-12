@@ -1,0 +1,26 @@
+.zDialog {
+
+    .zDialogTitle {
+        font-family: "Raleway", sans-serif;
+        color: $clear-white;
+        font-weight: 700;
+    }
+
+    .zDialogContentText {
+        font-family: "Raleway", sans-serif;
+        color: $clear-white;
+        font-weight: 400;
+    }
+
+    .zButton {
+        font-family: "Raleway", sans-serif;
+        color: $accent-ligth;
+        font-weight: 700;
+
+        &:hover {
+            color: $dark-main;
+            background-color: $accent-ligth;
+        }
+    }
+
+}

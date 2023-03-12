@@ -1,0 +1,21 @@
+.aboutme-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: $clear-white;
+    font-size: $normal;
+    text-align: left;
+    line-height: 25px;
+    word-spacing: 6px;
+    font-weight: 300;
+    width: 60ch;
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}

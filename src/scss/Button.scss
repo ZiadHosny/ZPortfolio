@@ -1,0 +1,49 @@
+.comp-button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  outline: none;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 5px;
+  font-weight: 600;
+  background-color: $accent-ligth;
+  font-size: $normal;
+  text-transform: uppercase;
+  transition: all 400ms ease-in-out;
+  color: $dark-main;
+
+  &:nth-of-type(2) {
+    background-color: $ligth-main;
+  }
+
+  &:hover {
+    box-shadow: 5px 5px $accent;
+    transition: all 400ms ease-in-out;
+    transform: scale(1.02);
+  }
+
+  a {
+    color: $dark-main;
+  }
+
+  &:nth-of-type(2):hover {
+    box-shadow: 5px 5px $clear-ligth;
+  }
+
+  &:hover svg {
+    animation: movement 600ms ease-in-out;
+  }
+
+  @keyframes movement {
+    50% {
+      rotate: 20deg;
+    }
+
+    100% {
+      rotate: -20deg;
+    }
+  }
+}

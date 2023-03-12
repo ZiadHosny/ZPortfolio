@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: $dark-main;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html * {
+    font-family: "Raleway", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: $dark-main;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $accent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $accent-dark;
+}
+
+#root {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 80px;
+    min-width: 280px;
+    width: 1000px;
+    max-width: 1000px;
+    margin: 0 20px;
+    padding: 30px 15px;
+    overflow-x: hidden;
+}
