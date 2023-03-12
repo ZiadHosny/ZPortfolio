@@ -1,0 +1,72 @@
+.study-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid $clear-ligth;
+    transition: all 200ms ease;
+
+    &:hover {
+        border: 1px solid $accent-ligth;
+        transition: all 200ms ease;
+    }
+
+    .card-subheading {
+        color: $accent-ligth;
+        font-size: $sub-heading;
+        font-weight: 700;
+    }
+
+    .card-info {
+        color: $ligth-main;
+    }
+
+    .card-description {
+        width: 50ch;
+        color: $clear-white;
+    }
+
+}
+
+.certificate-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    border: none;
+    width: max-content;
+    padding: 4px 10px;
+    background-color: $ligth-main;
+    font-size: $small;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 200ms ease;
+
+    a {
+        color: $dark-main;
+    }
+
+    &:disabled * {
+        cursor: not-allowed;
+    }
+
+    &:disabled {
+        background-color: rgb(148, 147, 147);
+        color: $dark-main;
+    }
+
+    &:hover:disabled {
+        box-shadow: none;
+        transform: none;
+    }
+
+    &:hover {
+        box-shadow: 5px 5px $clear-ligth;
+        transition: all 200ms ease;
+        transform: scale(1.03);
+    }
+}
